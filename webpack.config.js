@@ -21,14 +21,7 @@ var componentName = 'Rxfietest',
  * @returns {{}}
  */
 function getDevEntry(cwd) {
-
-    var entry = {};
-    glob.sync('{*.jsx,*/*.jsx}', { cwd: cwd }).forEach(function(item, i) {
-        var file = item.replace('.jsx','');
-        entry[file] = [
-            item
-        ];
-    });
+    entry = { "detail/index": ["detail/index.jsx"], "home/index": ["home/index.jsx"], "index": ["index.jsx"], "order/index": ["order/index.jsx"] };
     return entry;
 }
 
@@ -80,7 +73,7 @@ var config = {
     plugins: [
 
         new RxPlugin(),
-        new webpack.BannerPlugin('// {"framework": "Rx"}', {raw: true}),
+        new webpack.BannerPlugin('// {"framework": "Rx"}', { raw: true }),
 
         ////Webpack gives IDs to identify your modules. With this plugin,
         //// Webpack will analyze and prioritize often used modules assigning them the smallest ids.
@@ -167,3 +160,4 @@ module.exports = {
     prod: prod
 
 };
+//module.exports = dev();

@@ -1,2 +1,4 @@
 node_modules/
 _output/
+build/
+lib/
