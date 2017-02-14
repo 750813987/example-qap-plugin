@@ -87,6 +87,8 @@ var config = {
                 stream.write(`📦   ${msg}`);
                 stream.clearLine(1);
             }
+            
+            process.send && process.send({percentage:percentage, msg:msg});
         })
     ]
 };
