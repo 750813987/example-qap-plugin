@@ -1,8 +1,10 @@
 # example-qap-plugin
 qap 插件示例
 
-## rax 分支
-- 演示切换为 rax 版本代码。
+## rax_buildin 分支
+- vendor 库包含 QAP-SDK,rax,nuke。
+- vendor 库内置后，需要在业务代码打包时排除 vendor 库，这样打包的bundle只包含业务代码，打包速度提升，包体积减小。
+- 演示切换为 rax 内置到千牛客户端后，需要修改的 webpack 配置。
 
 
 ## 介绍

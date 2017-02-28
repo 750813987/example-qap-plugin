@@ -40,7 +40,14 @@ var config = {
         filename: '[name].js',
         publicPath: '/build/'
     },
-
+    // vendor库内置后，需要在业务代码打包时排除vendor库
+    "externals": [{
+        "weex-rx": "commonjs rax",
+        "rax": "commonjs rax",
+        "nuke": "commonjs nuke",
+        "QAP-SDK": "commonjs QAP-SDK",
+        "genv": "commonjs genv",
+    }],
     resolve: {
         root: srcPath,
         extensions: ['', '.js', '.jsx'],
@@ -156,9 +163,7 @@ function prod() {
 
 
 module.exports = {
-
     dev: dev,
-
     prod: prod
 
 };
