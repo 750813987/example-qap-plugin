@@ -1,0 +1,29 @@
+{
+  "checkSum": {
+    "global-service": "5f11a92ab6cb66073a5164d424c7ec1c",
+    "module-service": "743e63cbc1e173ef3efdbf03a3811670"
+  },
+  "fileVersion": {
+    "nuke": "0.6.8",
+    "qapsdk": "1.0.4",
+    "rax": "0.1.9"
+  },
+  "overwriteVersion": "1.0.2",
+  "overwriteInfo": {
+    "nuke": "0.6.0",
+    "sdk": "1.0.4"
+  },
+  "version": "1.0.4",
+  "compatibility": {
+    "qn": {
+      "ios": "5.8.0",
+      "android": "5.8.1"
+    }
+  },
+  "builtTime": "2/27/2017, 7:36:17 PM",
+  "main": "index.js",
+  "name": "qap-sdk-pack",
+  "webURL": "https://os.alipayobjects.com/qapprod/9b3e1635-ba26-4441-8d51-4a0ac999d58d/index.js",
+  "update_time": "2017-3-1",
+  "publishTag": "latest"
+}
